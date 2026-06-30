@@ -44,12 +44,13 @@ def demo_reply(state, body):
         if "quote" in body.lower():
             state["step"] = 1
             return (
-                "Hey! Thanks for reaching out. Quick Q so I can get you booked "
-                "- is this for your home or a commercial property?"
+                "Hey! Thanks for reaching out to HeatBooker. I've got a few "
+                "quick questions to get you booked. Is this for your home or "
+                "commercial property? "
+                "(Msg & data rates may apply. Reply STOP to opt out, HELP for help.)"
             )
         return (
-            "Hi! I'm Maya, an AI SMS booking agent for HVAC shops. "
-            "Text the word QUOTE to see how I qualify a lead and book "
+            "Hi! Text the word QUOTE to see how we qualify a lead and book "
             "an appointment in under 60 seconds."
         )
 
